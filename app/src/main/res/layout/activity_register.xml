@@ -60,7 +60,7 @@
                 android:id="@+id/et_konfirmasi_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Konfirmasi Password"
+                android:hint="Confirm Password"
                 android:inputType="textPassword"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -79,7 +79,8 @@
             android:layout_height="wrap_content"
             android:text="Sudah pernah daftar? Silahkan Langsung Login!"
             android:textAllCaps="false"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
