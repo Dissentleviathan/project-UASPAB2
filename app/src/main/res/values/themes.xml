@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.pariwisata" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Base.Theme.pariwisata.ActionBar" parent="Theme.Material3.DayNight">
+        <!-- Customize your theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Base.Theme.pariwisata." parent="Base.Theme.pariwisata"/>
+    <style name="Base.Theme.pariwisata..ActionBar" parent="Base.Theme.pariwisata.ActionBar"/>
+</resources>
