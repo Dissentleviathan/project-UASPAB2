@@ -18,7 +18,7 @@
             android:name=".UpdatePostActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.pariw.ActionBar"/>
+            android:theme="@style/Theme.pariwisata.ActionBar"/>
         <activity
             android:name=".AddPostActivity"
             android:exported="false"

@@ -9,9 +9,9 @@ public class Post  implements Parcelable {
     private String user_id;
     private String created_date;
     private String modified_date;
-    private String username;
 
-    private String foto;
+    private String nama_wisata;
+
 
     protected Post(Parcel in) {
         id = in.readString();
@@ -19,8 +19,7 @@ public class Post  implements Parcelable {
         user_id = in.readString();
         created_date = in.readString();
         modified_date = in.readString();
-        username = in.readString();
-        foto = in.readString();
+        nama_wisata = in.readString();
     }
 
     @Override
@@ -30,8 +29,7 @@ public class Post  implements Parcelable {
         dest.writeString(user_id);
         dest.writeString(created_date);
         dest.writeString(modified_date);
-        dest.writeString(username);
-        dest.writeString(foto);
+        dest.writeString(nama_wisata);
     }
 
     @Override
@@ -91,17 +89,14 @@ public class Post  implements Parcelable {
         this.modified_date = modified_date;
     }
 
-    public String getUsername() {
-        return username;
+    public String getNama_wisata() {
+        return nama_wisata;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setNama_wisata(String nama_wisata) {
+        this.nama_wisata = nama_wisata;
     }
 
-    public  String getFoto() {return foto; }
-
-    public void setFoto(String foto) { this.foto = foto; }
 
     public int getTitle() {
         return 0;

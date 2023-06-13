@@ -8,31 +8,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        app:cardCornerRadius="4dp"
-        app:cardElevation="0.7dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0.1dp"
         app:cardMaxElevation="1dp"
-        app:cardPreventCornerOverlap="true"
-        android:layout_margin="8dp"
+        app:cardPreventCornerOverlap="false"
+        android:layout_margin="1dp"
         app:contentPadding="16dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:id="@+id/iv_foto"
-                android:src="@mipmap/ic_launcher"/>
-
 
             <TextView
-                android:id="@+id/tv_username"
+                android:id="@+id/tv_namawisata"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Username"
+                android:text="nama wisata"
                 android:textSize="18sp"
-                android:layout_marginTop="228dp"
+                android:layout_marginTop="2dp"
                 android:textStyle="bold"/>
 
             <TextView
@@ -40,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Content"
-                android:layout_below="@+id/tv_username"
+                android:layout_below="@+id/tv_namawisata"
                 android:textSize="15sp"
                 android:layout_marginTop="20dp"/>
 

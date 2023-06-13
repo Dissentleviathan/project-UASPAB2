@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        if (!Utility.checkValue(this, "xUsername")) {
+        if (!Utility.checkValue(this, "xUserId")) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
             finish();
