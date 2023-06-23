@@ -37,6 +37,7 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.ViewHo
     public void onBindViewHolder(@NonNull PostViewAdapter.ViewHolder holder, int position) {
         int pos = holder.getAdapterPosition();
         Post post = data.get(pos);
+        Glide.with(holder.itemView).load(post.getFoto()).into(holder.postItemBinding.ivFoto);
         holder.postItemBinding.tvNamawisata.setText(post.getNama_wisata());
         holder.postItemBinding.tvContent.setText(post.getContent());
         holder.postItemBinding.tvCreatedDate.setText(post.getCreated_date());

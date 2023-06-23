@@ -19,6 +19,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/iv_foto"
+                android:src="@mipmap/ic_launcher"/>
 
             <TextView
                 android:id="@+id/tv_namawisata"
@@ -26,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:text="Nama Wisata"
                 android:textSize="18sp"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="200dp"
                 android:textStyle="bold"/>
 
             <TextView

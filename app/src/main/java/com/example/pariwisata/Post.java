@@ -9,6 +9,7 @@ public class Post  implements Parcelable {
     private String user_id;
     private String created_date;
     private String modified_date;
+    private String foto;
 
     private String nama_wisata;
 
@@ -19,6 +20,7 @@ public class Post  implements Parcelable {
         user_id = in.readString();
         created_date = in.readString();
         modified_date = in.readString();
+        foto = in.readString();
         nama_wisata = in.readString();
     }
 
@@ -29,6 +31,8 @@ public class Post  implements Parcelable {
         dest.writeString(user_id);
         dest.writeString(created_date);
         dest.writeString(modified_date);
+        dest.writeString(modified_date);
+        dest.writeString(foto);
         dest.writeString(nama_wisata);
     }
 
@@ -87,6 +91,14 @@ public class Post  implements Parcelable {
 
     public void setModified_date(String modified_date) {
         this.modified_date = modified_date;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     public String getNama_wisata() {

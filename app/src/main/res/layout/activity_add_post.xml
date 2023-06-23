@@ -12,10 +12,30 @@
         android:layout_margin="16dp">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="500">
+
+            <EditText
+                android:id="@+id/et_foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="foto"
+                android:inputType="none"
+                android:maxLength="500"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_namawisata"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
+            android:layout_marginTop="80dp"
             app:counterMaxLength="180">
 
             <EditText
@@ -35,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="160dp"
             app:counterMaxLength="180">
 
             <EditText

@@ -29,12 +29,14 @@ public interface APIService {
     @FormUrlEncoded
     @POST("post")
     Call<ValueNoData> addPost(@Field("user_id") String user_id,
+                              @Field("foto") String foto,
                               @Field("nama_wisata") String nama_wisata,
                               @Field("content") String content);
 
     @FormUrlEncoded
     @PUT("post")
     Call<ValueNoData> updatePost(@Field("id") String id,
+                                 @Field("foto") String foto,
                                  @Field("nama_wisata") String nama_wisata,
                                  @Field("content") String content);
 
